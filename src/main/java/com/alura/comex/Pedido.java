@@ -58,5 +58,18 @@ public class Pedido {
                 ", fecha=" + fecha +
                 '}';
     }
+    //Encapsulamiento
+
+    public BigDecimal getValorTotal(){
+        return precio.multiply(BigDecimal.valueOf(cantidad));
+    }
+
+    public boolean isMasBaratoQue(Pedido otroPedido){
+        return this.getValorTotal().compareTo(otroPedido.getValorTotal())<0;
+    }
+
+    public boolean isMasCaroQue(Pedido otroPedido){
+        return this.getValorTotal().compareTo(otroPedido.getValorTotal())>0;
+    }
 
 }
