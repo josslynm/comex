@@ -58,7 +58,7 @@ public class Pedido {
                 ", fecha=" + fecha +
                 '}';
     }
-    //Encapsulamiento
+    /*Encapsulamiento
 
     public BigDecimal getValorTotal(){
         return precio.multiply(BigDecimal.valueOf(cantidad));
@@ -70,6 +70,6 @@ public class Pedido {
 
     public boolean isMasCaroQue(Pedido otroPedido){
         return this.getValorTotal().compareTo(otroPedido.getValorTotal())>0;
-    }
+    } */
 
 }
